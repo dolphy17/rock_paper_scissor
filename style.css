@@ -77,6 +77,8 @@ header > h1{
     margin: 0 20px;
     padding: 10px;
     display: inline-block;
+    height: 120px ;
+    width: 160px;
     transition: all 0.3s ease;
 }
 
@@ -108,10 +110,11 @@ header > h1{
     border: 4px solid #464647;
     box-shadow: 0 0 10px #25292b;
 }
-
-
-
-
+.pic{
+    height: 80px;
+    width: 60px;
+    margin: 9px 05px 08px 5px;
+}
 
 
 
