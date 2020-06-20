@@ -17,7 +17,7 @@ function getComputerChoice(){
 
 function convertToWord(letter){
     if(letter === "r") return "Rock";
-    if(letter ==- "p") return "Paper";
+    if(letter === "p") return "Paper";
     return "Scissors";
 }
 
@@ -30,7 +30,7 @@ function win(userChoice,computerChoice){
     computerScore_span.innerHTML=computerScore;
     result_p.innerHTML=convertToWord(userChoice) + smalluserword + " beats " + convertToWord(computerChoice) + smallcompword + ". You Win!";
     userChoice_div.classList.add('green-glow');
-    setTimeout(() => userChoice_div.classList.remove('green-glow'), 300);
+    setTimeout(() => userChoice_div.classList.remove('green-glow'), 1000);
 }
 
 
@@ -44,7 +44,7 @@ function lose(userChoice,computerChoice){
     computerScore_span.innerHTML=computerScore;
     result_p.innerHTML=convertToWord(userChoice) + smalluserword + " loses to " + convertToWord(computerChoice) + smallcompword + ". You Lost!";
     userChoice_div.classList.add('red-glow');
-    setTimeout(() => userChoice_div.classList.remove('red-glow'), 300);
+    setTimeout(() => userChoice_div.classList.remove('red-glow'), 1000);
 }
 
 function draw(userChoice,computerChoice){
@@ -53,7 +53,7 @@ function draw(userChoice,computerChoice){
     const userChoice_div=document.getElementById(userChoice);
     result_p.innerHTML=convertToWord(userChoice) + smalluserword + " equals " + convertToWord(computerChoice) + smallcompword + ". It's a Draw!";
     userChoice_div.classList.add('gray-glow');
-    setTimeout(() => userChoice_div.classList.remove('gray-glow'), 300);
+    setTimeout(() => userChoice_div.classList.remove('gray-glow'), 1000);
 }
 
 function game(userChoice){
